@@ -10,9 +10,10 @@
 		<div class="form-group">
 			<?php echo Form::label('Still here', 'still_here', array('class'=>'control-label')); ?>
 
-				<?php echo Form::input('still_here', Input::post('still_here', isset($monkey) ? $monkey->still_here : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Still here')); ?>
-
-		</div>
+				<?php // echo Form::input('still_here', Input::post('still_here', isset($monkey) ? $monkey->still_here : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Still here')); ?>
+                                <?php echo Form::checkbox('still_here', true); ?>
+		
+                </div>
 		<div class="form-group">
 			<?php echo Form::label('Height', 'height', array('class'=>'control-label')); ?>
 
